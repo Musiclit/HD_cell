@@ -1,0 +1,23 @@
+numpy
+pandas
+scipy
+scikit-learn
+numba
+circle_fit
+ipympl
+tqdm
+flammkuchen
+matplotlib
+bouter
+seaborn
+colorspacious
+svgpath2mpl
+pooch
+bg_space
+ipynbname
+bg-atlasapi
+scikit-image
+trimesh
+
+# new requirements for my project
+statsmodels
