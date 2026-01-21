@@ -26,6 +26,7 @@ def main():
 
         net_move = grid_search_moving(config, net_sta)
         net_move.print_number_of_each_type(net_sta)
+        # Tested the first 3, it works well.
         
         
 if __name__ == "__main__":
