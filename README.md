@@ -7,20 +7,17 @@ Figures in src/folder4 needs results in folders 1, 2, 3.
 
 # Set the environment
 conda create -n HD python==3.8.8
+conda activate HD
 
 cd src/utilities/main
 pip install -e .
 
+conda install numpy pandas scipy scikit-learn numba ipympl tqdm flammkuchen matplotlib seaborn colorspacious svgpath2mpl pooch ipynbname bg-atlasapi scikit-image trimesh statsmodels jupyterlab
+
 cd ../zebrafish
 pip install -e .
 
-pip install scikit-learn==1.1.3 %% turn to an older version of scikit-learn to avoid errors
-
-pip install statsmodels
-
-Some packages may missing, please install them as needed.
-
-Some 3D plots need a higher version of matplotlib and python, please use another environment to plot them.
+3D plots need a higher version of matplotlib and python, please use another environment to plot them.
 
 
 # Data
@@ -32,7 +29,7 @@ Only the "PEN1data.pkl" file is used. Put it to data/Drosophila/
 
 Zebrafish:   
 https://zenodo.org/records/7715850  
-Only the lightsheet data is used. Put it to data/zebrafish/published/lightsheet/  
+Only the lightsheet data is used. Put it folders within the lightsheet folder to data/zebrafish/published/lightsheet/  
 
 
 # Acknowledgements

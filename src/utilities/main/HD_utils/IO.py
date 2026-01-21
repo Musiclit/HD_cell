@@ -15,10 +15,10 @@ from HD_utils.dataclass import *
 # ==========================================
 def find_project_root(marker_files=None, max_depth=8):
     """
-    Find project root by looking for .git
+    Find project root by looking for src
     """
     if marker_files is None:
-        marker_files = ['.git']
+        marker_files = ['src']
     
     current = Path(__file__).parent.resolve()
     
