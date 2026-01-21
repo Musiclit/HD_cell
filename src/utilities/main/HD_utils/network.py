@@ -686,6 +686,8 @@ def vonmises_weight_2i1r_2(J0, J1, k0, kappa, phi, theta_num, theta_range=None):
 
 def vonmises_weight_2i1r_unequal_theta(J0, J1, k0, kappa, phi, theta_num, theta_range, dtheta):
     
+    
+    
     scale = dtheta/(2*np.pi/theta_num)
 
     w_cl = np.zeros([theta_num, theta_num]) # result theta, input theta
