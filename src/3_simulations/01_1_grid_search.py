@@ -18,6 +18,11 @@ from HD_utils.gridsearch_configs import configs
 def main():
     # Run simulations for all configurations
     for i, config in enumerate(configs):
+        
+        # For Test:
+        if i < 14:
+            continue
+        
         print(f"\n=== Running configuration {i+1}/{len(configs)} ===")
         print(f"Running grid search for configuration: {config.ring_num} rings, {config.actfun.__name__} activation & {config.weight_fun.__name__} weight function.")
         print("==================================\n")

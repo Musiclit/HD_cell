@@ -313,7 +313,7 @@ def grid_search_stationary(config: SimulationConfig, n_jobs=-1, save_results=Tru
     
     # Run parallel computation
     print(f"Running parallel grid search with {len(param_combinations)} parameter combinations")
-    results = Parallel(n_jobs=n_jobs, verbose=1, backend='loky')(
+    results = Parallel(n_jobs=n_jobs, verbose=10, backend='loky')(
         delayed(process_single_params)(pars) for pars in param_combinations
     )
     

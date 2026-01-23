@@ -1,1 +1,12 @@
 python: can't open file '03_2': [Errno 2] No such file or directory
+
+=== Running configuration 15/20 ===
+Running grid search for configuration: 3 rings, max0x activation & vonMises_weight_3r_v2_II weight function.
+==================================
+
+Running parallel grid search with 6600 parameter combinations
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 28 concurrent workers.
+/home/mei/miniconda3/envs/HD/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:314: UserWarning: resource_tracker: There appear to be 34 leaked semlock objects to clean up at shutdown
+  warnings.warn(
+/home/mei/miniconda3/envs/HD/lib/python3.8/site-packages/joblib/externals/loky/backend/resource_tracker.py:314: UserWarning: resource_tracker: There appear to be 3 leaked folder objects to clean up at shutdown
+  warnings.warn(

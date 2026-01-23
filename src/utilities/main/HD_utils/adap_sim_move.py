@@ -312,7 +312,7 @@ def grid_search_moving(config: SimulationConfig, net_sta: GridSearchResultStatio
     
     # Run parallel computation
     print(f"Running parallel grid search moving with {len(net_sta.valid_id)} valid networks")
-    results = Parallel(n_jobs=n_jobs, verbose=1, backend='loky')(
+    results = Parallel(n_jobs=n_jobs, verbose=10, backend='loky')(
         delayed(process_single_network)(i) for i in net_sta.valid_id
     )
     
