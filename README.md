@@ -20,7 +20,8 @@ pip install -e .
 conda install numpy pandas scipy scikit-learn numba ipympl tqdm flammkuchen matplotlib seaborn colorspacious svgpath2mpl pooch ipynbname bg-atlasapi scikit-image trimesh statsmodels jupyterlab pingouin
 
 pip install pingouin  
-Note that conda downgrades pandas when installing pingouin, which causes errors when running certain code. So please install pingouin via pip.
+Note that conda downgrades pandas during pingouin installation, which causes errors when running certain code. So please install pingouin via pip.
+If something goes wrong after installing pingouin, remove it and revert to the previous version.
 
 cd ../zebrafish
 pip install -e .
