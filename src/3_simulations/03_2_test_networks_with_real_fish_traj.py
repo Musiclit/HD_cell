@@ -114,8 +114,8 @@ mse_list = []
 
 for i_num, i in enumerate(tqdm(valid_index_linear_move)):
     
-    if i_num > 2:
-        break  # Reduce computation for testing
+    # if i_num > 2:
+    #     break  # Reduce computation for testing
     
     w = weight_fun(*network_pars[i], phi, theta_num)
     vel = Vels[i].mean(axis=1)

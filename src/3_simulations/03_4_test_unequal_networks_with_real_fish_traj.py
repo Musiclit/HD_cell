@@ -128,8 +128,8 @@ counter = 0
 # for i_num, i in enumerate(([valid_index_linear_move[32]])):
 for i_num, i in enumerate(tqdm(valid_index_linear_move)):
     
-    if i_num > 2:
-        break  # Reduce computation for testing
+    # if i_num > 2:
+    #     break  # Reduce computation for testing
     
     weights = weight_fun(*network_pars[i], phi, theta_num, theta_range, dtheta)
     vel = Vels[i,:,0] # central ring's velocity
