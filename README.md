@@ -1,13 +1,12 @@
 # Overview
-Analyze HD cells from zebrafish and Drosophila.  
-Simulation of the head direction (HD) system using ring attractor models.
+Analyze head direction (HD) cells from zebrafish and Drosophila. Simulate the HD system using ring attractor models.
 
-Figures in the src/folder4 need results in folders 1, 2, and 3.
-
-The code accompanying the paper:  
+The code is used by the paper:  
 A multi-ring shifter network computes head direction in zebrafish  
 Siyuan Mei, Hagar Lavian, You Kure Wu, Martin Stemmler, Ruben Portugues, Andreas V.M. Herz  
 bioRxiv 2025.12.29.696831; doi: https://doi.org/10.64898/2025.12.29.696831  
+
+Figures in the src/folder4 need results in folders 1, 2, and 3.
 
 
 # Set the environment
