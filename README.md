@@ -4,6 +4,11 @@ Simulation of head direction (HD) system using ring attractor models.
 
 Figures in src/folder4 needs results in folders 1, 2, 3.
 
+The code accompanying the paper:  
+A multi-ring shifter network computes head direction in zebrafish  
+Siyuan Mei, Hagar Lavian, You Kure Wu, Martin Stemmler, Ruben Portugues, Andreas V.M. Herz  
+bioRxiv 2025.12.29.696831; doi: https://doi.org/10.64898/2025.12.29.696831  
+
 
 # Set the environment
 conda create -n HD python==3.8.8
