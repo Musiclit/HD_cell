@@ -49,6 +49,10 @@ https://zenodo.org/records/7715850
 Only the lightsheet data is used. Put it folders within the lightsheet folder to data/zebrafish/published/lightsheet/  
 
 
+# Results
+The results can be downloaded from: https://osf.io/ajzb5/files/agkf5
+
+
 # Acknowledgements
 utilities/zebrafish is copied from https://github.com/portugueslab/lotr/tree/v1.0.2  
 It is used to read data and perform preprocessing.  
