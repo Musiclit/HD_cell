@@ -113,6 +113,10 @@ phase_raw_list = []
 mse_list = []
 
 for i_num, i in enumerate(tqdm(valid_index_linear_move)):
+    
+    if i_num > 2:
+        break  # Reduce computation for testing
+    
     w = weight_fun(*network_pars[i], phi, theta_num)
     vel = Vels[i].mean(axis=1)
     s1 = np.concatenate( [network_acvs[i][0,:,-1], network_acvs[i][1,:,-1], network_acvs[i][2,:,-1]] )
@@ -177,9 +181,11 @@ for i_num, i in enumerate(tqdm(valid_index_linear_move)):
 
 net_performance = pd.DataFrame({'net_id': net_id_list, 'traj_i': traj_i_list, 'r': r_list, 'ratio': ratio_list, 'mse': mse_list})
 sim_prefix = 'new13_'
-pd.to_pickle(net_performance, SIM_RESULT_PATH / sim_prefix + 'net_performance.pkl')
+pd.to_pickle(net_performance, SIM_RESULT_PATH / (sim_prefix + 'net_performance.pkl'))
 
-with open(SIM_RESULT_PATH / sim_prefix + 'net_phase_list.pkl', 'wb') as f:
+with open(SIM_RESULT_PATH / (sim_prefix + 'net_phase_list.pkl'), 'wb') as f:
     pickle.dump(net_phase_list, f)
-with open(SIM_RESULT_PATH / sim_prefix + 'phase_raw_list.pkl', 'wb') as f:
+with open(SIM_RESULT_PATH / (sim_prefix + 'phase_raw_list.pkl'), 'wb') as f:
     pickle.dump(phase_raw_list, f)
+with open(FISH_RESULT_PATH / 'traj_fish.pkl', 'wb') as f:
+    pickle.dump(traj_fish, f)

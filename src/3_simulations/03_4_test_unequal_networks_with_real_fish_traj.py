@@ -113,7 +113,7 @@ valid_index_linear_move = np.where(np.diff(linear_mov_range_id, axis=1) == 8)[0]
 
 # Run Simulations
 
-sim_prefix = 'new_15_3'
+sim_prefix = 'new_15_'
 
 net_id_list = []
 traj_i_list = []
@@ -127,6 +127,10 @@ counter = 0
 
 # for i_num, i in enumerate(([valid_index_linear_move[32]])):
 for i_num, i in enumerate(tqdm(valid_index_linear_move)):
+    
+    if i_num > 2:
+        break  # Reduce computation for testing
+    
     weights = weight_fun(*network_pars[i], phi, theta_num, theta_range, dtheta)
     vel = Vels[i,:,0] # central ring's velocity
     s1 = np.concatenate( [network_acvs[i][0,:,-1], network_acvs[i][1,:,-1], network_acvs[i][2,:,-1]] )
