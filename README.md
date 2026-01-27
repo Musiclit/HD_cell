@@ -12,12 +12,24 @@ conda activate HD
 cd src/utilities/main
 pip install -e .
 
-conda install numpy pandas scipy scikit-learn numba ipympl tqdm flammkuchen matplotlib seaborn colorspacious svgpath2mpl pooch ipynbname bg-atlasapi scikit-image trimesh statsmodels jupyterlab
+conda install numpy pandas scipy scikit-learn numba ipympl tqdm flammkuchen matplotlib seaborn colorspacious svgpath2mpl pooch ipynbname bg-atlasapi scikit-image trimesh statsmodels jupyterlab pingouin
+
+pip install pingouin  
+Note that conda will downgrade pandas when install pingouin, which causes errors when running certain codes. So please install pingouin via pip.
 
 cd ../zebrafish
 pip install -e .
 
+## 3D plots
 3D plots need a higher version of matplotlib and python, please use another environment to plot them.
+
+conda create -n plot python matplotlib numpy jupyterlab scikit-learn tqdm
+
+conda activate plot
+
+cd src/utilities/main
+
+pip install -e .
 
 
 # Data

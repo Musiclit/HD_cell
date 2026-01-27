@@ -7,6 +7,7 @@ HD_utils/adap_sim_stable.py
 HD_utils/circular_stats.py
 HD_utils/color.py
 HD_utils/comput_property.py
+HD_utils/dataclass.py
 HD_utils/defaults.py
 HD_utils/exam.py
 HD_utils/gridsearch_configs.py
